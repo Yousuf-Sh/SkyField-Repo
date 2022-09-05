@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerHealth : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    public int damageAmmount;
     public healthBar healthbar;
 
     void Start()
@@ -19,13 +20,13 @@ public class playerHealth : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            takeDamage(10);
+            takeDamage(damageAmmount);
         }
 
     }
-    void takeDamage(int damageAmmount)
+    void takeDamage(int damage)
     {
-        currentHealth -= damageAmmount;
+        currentHealth -= damage;
         healthbar.setHealth(currentHealth);
     }
 }
