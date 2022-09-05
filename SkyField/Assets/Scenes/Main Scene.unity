@@ -228,7 +228,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27164
+  m_Name: pb_Mesh28232
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -399,6 +399,7 @@ GameObject:
   - component: {fileID: 196315975}
   - component: {fileID: 196315974}
   - component: {fileID: 196315973}
+  - component: {fileID: 196315976}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -510,6 +511,19 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &196315976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196315971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72135d919c1630a41b19137d1915f467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 196315973}
 --- !u!1 &327858202
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,6 +1491,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.965465, y: 1.185599, z: 5.1243987}
   m_Center: {x: 0.50821537, y: 0.77611953, z: 0}
+--- !u!114 &647521712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647521705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7760d40c9e96e1842aade7dafafb423e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  damageAmmount: 20
+  healthbar: {fileID: 196315976}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2008,7 +2038,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27022
+  m_Name: pb_Mesh28090
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
